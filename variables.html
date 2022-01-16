@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Registration</title>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <script>
+        function getTotal() {
+            // DECLARATIONS
+            const totalAmountDue = 100;
+            let totalDue = 0;
+
+
+            //INPUT
+            let discount= document.querySelector('#discount').value;
+
+            //PROCESSING
+            totalDue = totalAmountDue - discount;
+
+            //OUTPUT
+            document.querySelector('#totalAmountDue').innerHTML = totalDue;
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Vehicle Registration</h1>
+    </header>
+    <main>
+        <label>Owner Full Name: <input type="text" id="fullname"></label>
+        <label>Vehicle Make: <input type="text" id="make"></label>
+        <label>Vehicle Model: <input type="text" id="model"></label>
+        <label>Discount Amount: <input type="number" id="discount"></label>
+        <div class="processing"><button onclick="getTotal()">Compute Total</button>
+        <label id=td>Total Due: </label> 
+        <p id= "totalAmountDue"></p>
+                
+        </div>
+    </main>
+    <footer>©️2022 .:|:. Igrayne Juarez .:|:. CIT 160 at BYU-Idaho</footer>
+    
+</body>
+</html>
