@@ -1,9 +1,9 @@
 h1 {
-    color: rgb(197, 196, 194);
+    color: rgb(102, 100, 95);
     text-decoration: underline overline;
 }
 
-body {background-color: rgb(41, 90, 129);
+body {background-color: rgb(81, 135, 179);
       font-family: 'Courier New', Courier, monospace;
       font-size: 18px;
 }
